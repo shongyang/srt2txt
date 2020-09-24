@@ -20,11 +20,6 @@ def output_txt(file_name):
         output = []
         lines = f.readlines()
 
-        # Clean all the whitespace line
-        for index, line in enumerate(lines):
-            if line == "\n":
-                del lines[index]
-
         # Get text with steps
         for line in lines[2::3]:
             line = line.replace("\n", " ")
